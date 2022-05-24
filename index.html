@@ -4,23 +4,65 @@
     <meta charset="utf-8">
     <title>Home</title>
     <style>
+
       h1 {
-        color: purple;
+        color: hsl(240, 70%, 70%, .5);
+        border-style: solid;
+        border-width: 1px;
+        border-color: red;
       }
 
       p {
         color: red;
       }
 
+      p.important {
+        width: 25%;
+      }
+
       body {
         background-color: dodgerblue;
+      }
+
+      .purple-text {
+        color: rgb(0, 0, 255);
+      }
+
+      .important:hover {
+        background-color: #0000FF;
+      }
+
+      a[href="https://www.newyorker.com"] {
+        background-color: orange;
+        padding: 1rem;
+      }
+
+      a[href="https://www.nytimes.com"] {
+        background-color: blue;
+      }
+
+      #lead-paragraph {
+        color: purple;
+        font-weight: bold;
+      }
+
+      img {
+        border-style: dashed;
+        border-color: orange;
+        border-width: 3px;
+        width: 25%;
       }
     </style>
   </head>
 
   <body>
     <h1>Welcome</h1>
-    <p>everything is fine</p>
+    <p class="purple-text">everything is fine</p>
+    <p class="important purple-text">it'll be important too</p>
+    <p id="lead-paragraph"> the world is good</p>
+    <a href="https://www.nytimes.com">new york times</a>
+    <a href="https://www.newyorker.com">new yorker</a>
+    <img src="https://live.staticflickr.com/7408/16540043296_dea065f48d_b.jpg" alt="Ellipses benches in the snow.">
   </body>
 
 </html>
